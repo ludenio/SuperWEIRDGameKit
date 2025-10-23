@@ -1,0 +1,10 @@
+image: "/assets/images/tileset128.png"
+tile_width: 64
+tile_height: 64
+animations {
+  id: "collision"
+  start_tile: 95
+  end_tile: 95
+  fps: 1
+}
+extrude_borders: 2

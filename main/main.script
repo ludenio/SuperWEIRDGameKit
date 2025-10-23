@@ -1,0 +1,324 @@
+local lights = require "main.lights"
+local zoom = require "main.zoom"
+local keys = require "utils.keys"
+local hashes = require "utils.hashes"
+local data = require "main.data"
+local actions = require "main.sys.actions"
+local settings = require "main.settings"
+local visual_settings = require "main.visual_settings"
+local md = require "main.sys.model"
+local mutator = require "main.sys.mutator"
+local view = require "main.view.view"
+local cu = require "utils.common_utils"
+local mines = require "main.mines.mines"
+local interpolator = require "main.sys.interpolator"
+local setup_map_parcer = require "main.maps.setup_map_parcer"
+local static_data_parser = require "main.static_data_parser"
+local table_data = require "assets.table_data"
+local npc_processor = require "main.npc.npc_processor"
+local dirrector = require "main.npc.dirrector"
+
+local ROOT_ID = "/root"
+
+local active = true
+
+local local_actions = nil
+local last_actions = nil
+local host_actions = {}
+local host_self_actions = nil
+local player_actions_timestamp = {}
+
+local is_local_model_generated = true
+local local_model = nil
+local host_model = nil
+
+local last = {}
+local key_pressed = {}
+local player_last_message = {}
+local time = 0
+local local_last_snap_n = 0
+
+local function window_listener(self, event, data)
+	if event == window.WINDOW_EVENT_FOCUS_GAINED then
+		active = true
+		print("focus_gained")
+	end
+	if event == window.WINDOW_EVENT_FOCUS_LOST then
+		active = false
+		print("focus_lost")
+	end
+end
+
+local function on_message_callback(message_id, message)
+	if message_id == "remove_player" and data.host then
+		-- TODO
+	elseif message_id == "snapshot" then
+		if not settings.local_mode then
+			if local_last_snap_n > message.body.snap_n then
+				print("OLD SNAPSHOT SKIPPED")
+				return
+			end
+			local_last_snap_n =  message.body.snap_n
+			if local_model and not is_local_model_generated then
+				print("CHANGE LAST SNAPSHOT")
+				interpolator.change_last_snapshot(local_model)
+			end
+			local_model = message.body.snapshot
+			if message.body.last[data.player_id] then
+				actions.set_expire(local_actions, message.body.last[data.player_id])
+			end
+			is_local_model_generated = false
+			data.are_actions_local = true
+			mutator.apply_actions(local_model, local_actions)
+		end
+	elseif message_id == "actions" and data.host then
+		if not host_actions[message.sender_id] then
+			host_actions[message.sender_id] = actions.new(message.sender_id)
+		end
+		player_actions_timestamp[message.sender_id] = time
+		last[message.sender_id] = message.body.last
+		actions.merge(host_actions[message.sender_id], message.body.actions)
+	end
+end
+
+local function on_connect()
+	setup_map_parcer.init_parce(function (_location_id)
+		return	function(action)
+			local location_id = _location_id
+
+			if data.host then
+				actions.add_action(last_actions, action, location_id)
+			end
+		end
+	end, local_model)
+
+	setup_map_parcer.init_parce(function (_location_id)
+		return function()end
+	end, host_model)
+
+	for tag, foundation_data in pairs(data.foundations) do
+		if foundation_data.spawned == false then
+			print("WARNING: no setup map data found for foundation tag", tag, "from static data")
+		end
+	end
+
+	local action = actions.spawn_player(vmath.vector3(-650, 0, -100), data.player_id)
+	actions.add_action(last_actions, action, settings.defauit_location_id)
+end
+
+local function init_game()	
+	math.randomseed(os.time())
+	data.player_id = tostring(math.random(1, 1000000000))
+	local_actions = actions.new(data.player_id)
+	last_actions = actions.new(data.player_id)
+	host_self_actions = actions.new(data.player_id)
+	local_model = md.new()
+	settings.local_model = local_model --sub
+	
+	host_model = md.new()
+	for k, v in pairs(data.locations) do
+		md.add_location(local_model, k)
+		md.add_location(host_model, k)
+
+		data.npc_prog_targets[k] = {}
+		for _, option in pairs(data.NPC_PROG_OPTIONS) do
+			data.npc_prog_targets[k][option] = {}
+		end
+	end
+
+
+	msg.post("@render:", "use_camera_projection")
+	msg.post("camera", "acquire_camera_focus")
+	msg.post(".", "acquire_input_focus")
+
+	lights.add_light_reciever("ground", nil, "ground#ground")
+	lights.add_light_reciever("ground_bottom_border", nil, "ground_bottom_border#ground_bottom_border")
+	zoom.set_camera_offset_y(1000)
+	local color = vmath.vector4(visual_settings.bg_color_r / 256, visual_settings.bg_color_g / 256, visual_settings.bg_color_b / 256, 1)
+	local white = vmath.vector4(1)
+	msg.post("@render:", "clear_color", { color = color} )
+--	go.set(msg.url("main", "/hub", "shadow"), "tint", color)
+	
+	for i = 1, 1000 do
+		pcall(function()
+			local url = msg.url("main", "/bg_object" .. tostring(i), "")
+			local sprite_url = msg.url("main", "/bg_object" .. tostring(i), "sprite")
+			local position = go.get_position(url)
+			local lb = -1024 - position.x
+			local rb = position.x - 1920
+			local tb = -768 - position.z
+			local bb = position.z - 640
+			local v_p = math.max(tb, bb, 0) / (128 * 4)
+			local h_p = math.max(lb, rb, 0) / (128 * 4)
+			local power = math.sqrt(v_p * v_p + h_p * h_p)
+			go.set(sprite_url, "tint", power * color + (1 - power) * white)
+			zoom.register_object(url)
+		end)
+	end	
+	settings.isDebug = sys.get_engine_info().is_debug
+end
+
+function init(self)
+	static_data_parser.parse(table_data) --initial data for game objects
+	window.set_listener(window_listener)
+	init_game()
+end
+
+
+function on_input(self, action_id, action)
+	if not active then
+		return
+	end
+end
+
+
+function update(self, dt)
+	time = time + dt
+
+	interpolator.update(time)
+	zoom.update(dt)
+
+	if local_model and local_model.locations[local_model.ptw[data.player_id]] then --TODO move money and health to dedicated world
+		msg.post("root#main_menu", hashes.SET_MONEY, {value = local_model.locations[local_model.ptw[data.player_id]].money})
+		msg.post("root#main_menu", hashes.SET_HEALTH, {value = local_model.locations[local_model.ptw[data.player_id]].health})
+	end
+end
+
+local touch_delta = vmath.vector3()
+
+function fixed_update(self, dt)
+	if local_model and settings.local_mode then
+		if local_model.win then
+			msg.post("root#main_menu", hash("win"))
+		elseif local_model.lose then
+			msg.post("root#main_menu", hash("game_over"))
+		end
+	end
+
+	--if data.tick % 20 == 0 then
+	--	print_update_measure = true
+	--end
+
+	data.tick = data.tick + 1
+
+	local location_id = local_model and local_model.ptw[data.player_id]
+	local location = local_model and md.get_location(local_model, location_id)
+	if location and location.player_object_uids[data.player_id] then
+		local player_object_uid = location.player_object_uids[data.player_id]
+
+		if vmath.length(touch_delta) > 0 then
+			local action = actions.move_object(player_object_uid, vmath.vector3(settings.player_speed_x * touch_delta.x, 0, -settings.player_speed_y * touch_delta.y))
+			actions.add_action(last_actions, action, location_id)
+		else
+			local speed = vmath.vector3(0)
+			if key_pressed[keys.DOWN] then
+				speed = speed + vmath.vector3(0, 0, settings.player_speed_y)
+			end
+			if key_pressed[keys.LEFT] then
+				speed = speed + vmath.vector3(-settings.player_speed_x, 0, 0)
+			end
+			if key_pressed[keys.RIGHT] then
+				speed = speed + vmath.vector3(settings.player_speed_x, 0, 0)
+			end
+			if key_pressed[keys.UP] then
+				speed = speed + vmath.vector3(0, 0, -settings.player_speed_y)
+			end
+			if vmath.length(speed) > 0 then
+				if speed.x ~= 0 and speed.z ~= 0 then
+					speed = speed / math.sqrt(2)
+				end
+				speed = vmath.rotate( zoom.get_horizontal_rotation() , speed)
+				local action = actions.move_object(player_object_uid, speed)
+				actions.add_action(last_actions, action, location_id)
+			end
+		end
+	end
+
+
+	if not settings.local_mode then
+		if data.host then
+			for pid, timestamp in pairs(player_actions_timestamp) do
+				-- print(pid, time - timestamp, settings.disconnect_timeout)
+				local location = nil
+				if host_model and data.player_id then
+					location = md.get_location(host_model, host_model.ptw[data.player_id])
+				end
+				if time - timestamp > settings.disconnect_timeout and location and location.player_object_uids[data.player_id] then
+					player_actions_timestamp[pid] = nil
+					local action = actions.delete_player(location.player_object_uids[pid], pid)
+					host_actions[pid] = actions.new(pid)
+					actions.add_action(host_actions[pid], action, host_model.ptw[data.player_id])
+				end
+			end
+			data.are_actions_local = false
+			mutator.apply_actions(host_model, host_self_actions)
+			host_self_actions = actions.new(data.player_id)
+			for pid, actions_instance in pairs(host_actions) do
+				mutator.apply_actions(host_model, actions_instance)
+			end
+			mutator.mutate( host_model)
+			npc_processor.tick(host_model)
+			dirrector.tick(host_model)
+			mines.tick(host_model)
+		end
+	end
+	if local_model and not local_model.game_stop then
+		data.are_actions_local = true
+		mutator.apply_actions(local_model, last_actions)
+		mutator.mutate(local_model)
+	end
+
+	if settings.local_mode and local_model then
+		if not local_model.game_stop then
+			npc_processor.tick(local_model)
+			dirrector.tick(local_model)
+			mines.tick(local_model)
+		end
+		interpolator.load_snapshot(cu.copy_table(local_model), time, false)
+	else
+		interpolator.load_snapshot(cu.copy_table(local_model), time, is_local_model_generated)
+		is_local_model_generated = true
+		actions.merge(local_actions, cu.copy_table(last_actions))
+	end
+	last_actions = actions.new(data.player_id)
+	host_actions = {}
+
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hashes.CONNECTED_TO_ROOM then
+		print("CONNECTED")
+		msg.post("root#main_menu", hashes.CONNECTED_TO_ROOM, {id = message.id})
+		on_connect()
+	elseif message_id == hashes.ACTIONS_MSG then
+		local action = message.action
+		action.location_id = message.location_id
+		if message.is_action_local then
+			mutator.apply_action(local_model, action)
+		else
+			mutator.apply_action(host_model, action)
+		end
+		-- 
+		-- do nothing
+	elseif message_id == hash("screen_input") then
+		touch_delta = message.delta
+	elseif message_id == hash("next_wave") then
+		if local_model then
+			local_model.next_wave_requested = true
+		end
+	elseif message_id == hash("game_restart") then
+		init_game()
+		on_connect()
+	elseif message_id == keys.DOWN then
+		key_pressed[keys.DOWN] = message.pressed
+	elseif message_id == keys.LEFT then
+		key_pressed[keys.LEFT] = message.pressed
+	elseif message_id == keys.RIGHT then
+		key_pressed[keys.RIGHT] = message.pressed
+	elseif message_id == keys.UP then
+		key_pressed[keys.UP] = message.pressed
+	elseif message_id == hash("update_miner_settings") then
+		local action = actions.update_miner_settings(message.uid, message.steps)
+		actions.add_action(last_actions, action, message.location_id)
+	end
+end

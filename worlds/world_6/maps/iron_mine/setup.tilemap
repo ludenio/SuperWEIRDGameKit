@@ -1,0 +1,329 @@
+tile_set: "/assets/tiles_128.tilesource"
+layers {
+  id: "static_sprites"
+  z: 0.05
+  cell {
+    x: 0
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: 1
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: 2
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: -5
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: -4
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: -3
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: -2
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: -1
+    y: -2
+    tile: 336
+  }
+  cell {
+    x: 2
+    y: -1
+    tile: 336
+  }
+  cell {
+    x: -5
+    y: -1
+    tile: 336
+  }
+  cell {
+    x: 2
+    y: 0
+    tile: 336
+  }
+  cell {
+    x: -5
+    y: 0
+    tile: 336
+  }
+  cell {
+    x: 2
+    y: 1
+    tile: 336
+  }
+  cell {
+    x: -5
+    y: 1
+    tile: 336
+  }
+  cell {
+    x: 2
+    y: 2
+    tile: 336
+  }
+  cell {
+    x: -5
+    y: 2
+    tile: 336
+  }
+  cell {
+    x: 0
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: 1
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: 2
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: -5
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: -4
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: -3
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: -2
+    y: 3
+    tile: 336
+  }
+  cell {
+    x: -1
+    y: 3
+    tile: 336
+  }
+}
+layers {
+  id: "buildings"
+  z: 0.1
+  cell {
+    x: -4
+    y: -1
+    tile: 339
+  }
+  cell {
+    x: 2
+    y: 0
+    tile: 341
+  }
+  cell {
+    x: -2
+    y: 0
+    tile: 340
+  }
+  cell {
+    x: -2
+    y: 1
+    tile: 338
+  }
+  cell {
+    x: -1
+    y: 1
+    tile: 342
+  }
+  cell {
+    x: -4
+    y: 2
+    tile: 337
+  }
+  cell {
+    x: -1
+    y: 3
+    tile: 319
+  }
+}
+layers {
+  id: "static_collisions"
+  z: 0.2
+  cell {
+    x: 0
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: 1
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: 2
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: -5
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: -4
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: -3
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: -2
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: -1
+    y: -3
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: -2
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: -2
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: -1
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: -1
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: 0
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: 0
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: 1
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: 1
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: 2
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: 2
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: 3
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: 3
+    tile: 31
+  }
+  cell {
+    x: 0
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: 1
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: 2
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: 3
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: -6
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: -5
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: -4
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: -3
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: -2
+    y: 4
+    tile: 31
+  }
+  cell {
+    x: -1
+    y: 4
+    tile: 31
+  }
+}
+material: "/builtins/materials/tile_map.material"

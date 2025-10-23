@@ -1,0 +1,120 @@
+tile_set: "/assets/world_2/world_2.tilesource"
+layers {
+  id: "bg"
+  z: 0.0
+  cell {
+    x: 0
+    y: -1
+    tile: 160
+  }
+  cell {
+    x: 1
+    y: -1
+    tile: 161
+  }
+  cell {
+    x: 2
+    y: -1
+    tile: 162
+  }
+  cell {
+    x: 3
+    y: -1
+    tile: 163
+  }
+  cell {
+    x: 4
+    y: -1
+    tile: 164
+  }
+  cell {
+    x: 5
+    y: -1
+    tile: 165
+  }
+  cell {
+    x: 6
+    y: -1
+    tile: 166
+  }
+  cell {
+    x: 7
+    y: -1
+    tile: 167
+  }
+  cell {
+    x: 8
+    y: -1
+    tile: 168
+  }
+  cell {
+    x: 9
+    y: -1
+    tile: 169
+  }
+  cell {
+    x: 10
+    y: -1
+    tile: 170
+  }
+  cell {
+    x: 11
+    y: -1
+    tile: 171
+  }
+  cell {
+    x: 12
+    y: -1
+    tile: 172
+  }
+  cell {
+    x: 13
+    y: -1
+    tile: 160
+  }
+  cell {
+    x: 14
+    y: -1
+    tile: 161
+  }
+  cell {
+    x: 15
+    y: -1
+    tile: 162
+  }
+  cell {
+    x: 16
+    y: -1
+    tile: 163
+  }
+  cell {
+    x: 17
+    y: -1
+    tile: 164
+  }
+  cell {
+    x: 18
+    y: -1
+    tile: 165
+  }
+  cell {
+    x: 19
+    y: -1
+    tile: 166
+  }
+  cell {
+    x: 20
+    y: -1
+    tile: 169
+  }
+  cell {
+    x: 21
+    y: -1
+    tile: 172
+  }
+}
+layers {
+  id: "stuff"
+  z: 1.0
+}
+material: "/assets/materials/nolight/ground.material"

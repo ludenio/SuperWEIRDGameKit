@@ -1,0 +1,16 @@
+embedded_components {
+  id: "sprite"
+  type: "sprite"
+  data: "default_animation: \"radius\"\n"
+  "material: \"/assets/materials/nolight/tile_map.material\"\n"
+  "size {\n"
+  "  x: 36.0\n"
+  "  y: 25.0\n"
+  "}\n"
+  "size_mode: SIZE_MODE_MANUAL\n"
+  "textures {\n"
+  "  sampler: \"texture_sampler\"\n"
+  "  texture: \"/assets/world_2/world_2.atlas\"\n"
+  "}\n"
+  ""
+}

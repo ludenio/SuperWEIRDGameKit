@@ -1,0 +1,461 @@
+tile_set: "/assets/world_6/world_6.tilesource"
+layers {
+  id: "ground"
+  z: 0.0
+  cell {
+    x: 0
+    y: -4
+    tile: 123
+  }
+  cell {
+    x: 1
+    y: -4
+    tile: 124
+  }
+  cell {
+    x: 2
+    y: -4
+    tile: 121
+  }
+  cell {
+    x: 3
+    y: -4
+    tile: 122
+  }
+  cell {
+    x: -6
+    y: -4
+    tile: 125
+  }
+  cell {
+    x: -5
+    y: -4
+    tile: 126
+  }
+  cell {
+    x: -4
+    y: -4
+    tile: 124
+  }
+  cell {
+    x: -3
+    y: -4
+    tile: 125
+  }
+  cell {
+    x: -2
+    y: -4
+    tile: 126
+  }
+  cell {
+    x: -1
+    y: -4
+    tile: 127
+  }
+  cell {
+    x: 0
+    y: -3
+    tile: 124
+  }
+  cell {
+    x: 1
+    y: -3
+    tile: 125
+  }
+  cell {
+    x: 2
+    y: -3
+    tile: 126
+  }
+  cell {
+    x: 3
+    y: -3
+    tile: 121
+  }
+  cell {
+    x: -6
+    y: -3
+    tile: 123
+  }
+  cell {
+    x: -5
+    y: -3
+    tile: 124
+  }
+  cell {
+    x: -4
+    y: -3
+    tile: 125
+  }
+  cell {
+    x: -3
+    y: -3
+    tile: 126
+  }
+  cell {
+    x: -2
+    y: -3
+    tile: 127
+  }
+  cell {
+    x: -1
+    y: -3
+    tile: 123
+  }
+  cell {
+    x: 0
+    y: -2
+    tile: 124
+  }
+  cell {
+    x: 1
+    y: -2
+    tile: 125
+  }
+  cell {
+    x: 2
+    y: -2
+    tile: 126
+  }
+  cell {
+    x: 3
+    y: -2
+    tile: 121
+  }
+  cell {
+    x: -6
+    y: -2
+    tile: 123
+  }
+  cell {
+    x: -5
+    y: -2
+    tile: 124
+  }
+  cell {
+    x: -4
+    y: -2
+    tile: 125
+  }
+  cell {
+    x: -3
+    y: -2
+    tile: 126
+  }
+  cell {
+    x: -2
+    y: -2
+    tile: 127
+  }
+  cell {
+    x: -1
+    y: -2
+    tile: 123
+  }
+  cell {
+    x: 0
+    y: -1
+    tile: 123
+  }
+  cell {
+    x: 1
+    y: -1
+    tile: 124
+  }
+  cell {
+    x: 2
+    y: -1
+    tile: 121
+  }
+  cell {
+    x: 3
+    y: -1
+    tile: 122
+  }
+  cell {
+    x: -6
+    y: -1
+    tile: 125
+  }
+  cell {
+    x: -5
+    y: -1
+    tile: 126
+  }
+  cell {
+    x: -4
+    y: -1
+    tile: 124
+  }
+  cell {
+    x: -3
+    y: -1
+    tile: 125
+  }
+  cell {
+    x: -2
+    y: -1
+    tile: 126
+  }
+  cell {
+    x: -1
+    y: -1
+    tile: 127
+  }
+  cell {
+    x: 0
+    y: 0
+    tile: 121
+  }
+  cell {
+    x: 1
+    y: 0
+    tile: 122
+  }
+  cell {
+    x: 2
+    y: 0
+    tile: 123
+  }
+  cell {
+    x: 3
+    y: 0
+    tile: 123
+  }
+  cell {
+    x: -6
+    y: 0
+    tile: 125
+  }
+  cell {
+    x: -5
+    y: 0
+    tile: 126
+  }
+  cell {
+    x: -4
+    y: 0
+    tile: 123
+  }
+  cell {
+    x: -3
+    y: 0
+    tile: 124
+  }
+  cell {
+    x: -2
+    y: 0
+    tile: 125
+  }
+  cell {
+    x: -1
+    y: 0
+    tile: 126
+  }
+  cell {
+    x: 0
+    y: 1
+    tile: 121
+  }
+  cell {
+    x: 1
+    y: 1
+    tile: 121
+  }
+  cell {
+    x: 2
+    y: 1
+    tile: 122
+  }
+  cell {
+    x: 3
+    y: 1
+    tile: 123
+  }
+  cell {
+    x: -6
+    y: 1
+    tile: 125
+  }
+  cell {
+    x: -5
+    y: 1
+    tile: 126
+  }
+  cell {
+    x: -4
+    y: 1
+    tile: 126
+  }
+  cell {
+    x: -3
+    y: 1
+    tile: 123
+  }
+  cell {
+    x: -2
+    y: 1
+    tile: 124
+  }
+  cell {
+    x: -1
+    y: 1
+    tile: 125
+  }
+  cell {
+    x: 0
+    y: 2
+    tile: 126
+  }
+  cell {
+    x: 1
+    y: 2
+    tile: 127
+  }
+  cell {
+    x: 2
+    y: 2
+    tile: 123
+  }
+  cell {
+    x: 3
+    y: 2
+    tile: 124
+  }
+  cell {
+    x: -6
+    y: 2
+    tile: 125
+  }
+  cell {
+    x: -5
+    y: 2
+    tile: 126
+  }
+  cell {
+    x: -4
+    y: 2
+    tile: 126
+  }
+  cell {
+    x: -3
+    y: 2
+    tile: 123
+  }
+  cell {
+    x: -2
+    y: 2
+    tile: 124
+  }
+  cell {
+    x: -1
+    y: 2
+    tile: 125
+  }
+  cell {
+    x: 0
+    y: 3
+    tile: 125
+  }
+  cell {
+    x: 1
+    y: 3
+    tile: 126
+  }
+  cell {
+    x: 2
+    y: 3
+    tile: 127
+  }
+  cell {
+    x: 3
+    y: 3
+    tile: 121
+  }
+  cell {
+    x: -6
+    y: 3
+    tile: 125
+  }
+  cell {
+    x: -5
+    y: 3
+    tile: 126
+  }
+  cell {
+    x: -4
+    y: 3
+    tile: 126
+  }
+  cell {
+    x: -3
+    y: 3
+    tile: 122
+  }
+  cell {
+    x: -2
+    y: 3
+    tile: 123
+  }
+  cell {
+    x: -1
+    y: 3
+    tile: 124
+  }
+  cell {
+    x: 0
+    y: 4
+    tile: 124
+  }
+  cell {
+    x: 1
+    y: 4
+    tile: 125
+  }
+  cell {
+    x: 2
+    y: 4
+    tile: 126
+  }
+  cell {
+    x: 3
+    y: 4
+    tile: 121
+  }
+  cell {
+    x: -6
+    y: 4
+    tile: 124
+  }
+  cell {
+    x: -5
+    y: 4
+    tile: 125
+  }
+  cell {
+    x: -4
+    y: 4
+    tile: 126
+  }
+  cell {
+    x: -3
+    y: 4
+    tile: 121
+  }
+  cell {
+    x: -2
+    y: 4
+    tile: 122
+  }
+  cell {
+    x: -1
+    y: 4
+    tile: 123
+  }
+}
+layers {
+  id: "debug"
+  z: 0.0
+  is_visible: 0
+}
+material: "/assets/materials/nolight/tile_map.material"

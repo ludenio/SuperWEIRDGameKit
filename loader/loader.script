@@ -1,0 +1,50 @@
+--===================================================================
+-- precalculated hashes and local vars
+--===================================================================
+local h_proxy_loaded 		= hash("proxy_loaded")
+local h_load_world 			= hash("load_world")
+local h_unload_world		= hash("unload_world")
+local loaded_world_index 	= 0 -- index of a currently loaded world
+
+
+--===================================================================
+--user defined local functions
+--===================================================================
+
+local function load_proxy(name)
+	if not name then return end
+	msg.post(name, "load")
+end 
+
+local function unload_proxy(name)
+	if not name then return end
+	msg.post(name, "unload")
+end
+
+
+--===================================================================
+-- engine routines
+--===================================================================
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	load_proxy("#menu")
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == h_proxy_loaded then
+		msg.post(sender, "init")
+		msg.post(sender, "enable")
+
+	elseif message_id == h_load_world then
+		unload_proxy("#menu")
+		load_proxy("#world_"..message.world_index)
+		loaded_world_index = message.world_index
+		msg.post("/root#gui", hash("enable_button"))
+		
+	elseif message_id == h_unload_world then
+		unload_proxy("#world_".. loaded_world_index)
+		load_proxy("#menu")
+		loaded_world_index = 0
+	end
+end

@@ -1,0 +1,66 @@
+[bootstrap]
+main_collection = /loader/loader.collectionc
+render = /render/default.renderc
+
+[script]
+shared_state = 1
+
+[display]
+width = 960
+height = 640
+high_dpi = 1
+vsync = 0
+update_frequency = 60
+
+[android]
+input_method = HiddenInputField
+package = com.defold.example.basic3d
+
+[project]
+title = SuperWEIRDGameKit
+publisher = luden.io
+developer = luden.io
+dependencies#0 = https://github.com/defold/extension-spine/archive/refs/tags/3.9.7.zip
+dependencies#1 = https://github.com/britzl/defold-metrics/archive/master.zip
+dependencies#2 = https://github.com/Insality/druid/archive/refs/tags/0.11.0.zip
+
+[physics]
+type = 3D
+
+[osx]
+bundle_identifier = com.defold.example.basic3d
+
+[ios]
+bundle_identifier = com.defold.example.basic3d
+
+[html5]
+scale_mode = stretch
+show_fullscreen_button = 0
+show_made_with_defold = 0
+show_console_banner = 0
+
+[collection]
+max_input_stack_entries = 256
+max_instances = 2048
+
+[spine]
+max_instances = 256
+
+[tilemap]
+max_tile_count = 20480
+
+[model]
+max_count = 256
+
+[sound]
+max_component_count = 128
+
+[engine]
+fixed_update_frequency = 20
+
+[sprite]
+max_count = 1024
+
+[label]
+max_count = 1000
+

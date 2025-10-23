@@ -1,0 +1,114 @@
+images {
+  image: "/assets/images/gamepad/shadedDark01.png"
+}
+images {
+  image: "/assets/images/gamepad/shadedDark07.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_up.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_down.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_left.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_right.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_down_outline.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_left_outline.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_right_outline.png"
+}
+images {
+  image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_up_outline.png"
+}
+images {
+  image: "/assets/images/gui/plus.png"
+}
+images {
+  image: "/assets/images/gui/minus.png"
+}
+images {
+  image: "/assets/images/gui/button.png"
+}
+images {
+  image: "/assets/images/gui/input_hit_frame.png"
+}
+images {
+  image: "/assets/images/gui/hand.png"
+}
+animations {
+  id: "left"
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_left_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_left_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_left_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_left.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 2
+}
+animations {
+  id: "up"
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_up.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_up_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_up_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_up_outline.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 2
+}
+animations {
+  id: "right"
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_right_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_right.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_right_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_right_outline.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 2
+}
+animations {
+  id: "down"
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_down_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_down_outline.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_down.png"
+  }
+  images {
+    image: "/assets/images/gui/Keyboard & Mouse/Double/keyboard_arrow_down_outline.png"
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 2
+}
+extrude_borders: 2

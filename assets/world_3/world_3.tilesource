@@ -1,0 +1,83 @@
+image: "/assets/world_3/sprites/tileset128.png"
+tile_width: 128
+tile_height: 128
+animations {
+  id: "bomb"
+  start_tile: 53
+  end_tile: 54
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+}
+animations {
+  id: "drop_zone"
+  start_tile: 31
+  end_tile: 31
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "drop_zone_empty"
+  start_tile: 22
+  end_tile: 22
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "dropzone_apple_green"
+  start_tile: 19
+  end_tile: 19
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "dropzone_apple_yellow"
+  start_tile: 20
+  end_tile: 20
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "generator_blocked"
+  start_tile: 14
+  end_tile: 14
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "generator_fire"
+  start_tile: 17
+  end_tile: 17
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "generator_ice"
+  start_tile: 18
+  end_tile: 18
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "mine"
+  start_tile: 49
+  end_tile: 49
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "mine_processing"
+  start_tile: 50
+  end_tile: 50
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "scaffold_bot"
+  start_tile: 23
+  end_tile: 23
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "scaffold_bot_ice"
+  start_tile: 24
+  end_tile: 24
+  playback: PLAYBACK_NONE
+}
+animations {
+  id: "scaffold_mine"
+  start_tile: 25
+  end_tile: 25
+  playback: PLAYBACK_NONE
+}
+extrude_borders: 2

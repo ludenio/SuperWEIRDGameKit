@@ -1,0 +1,50 @@
+name: "shadow"
+tags: "ground"
+vertex_program: "/assets/materials/shadow/ground_shadow.vp"
+fragment_program: "/assets/materials/shadow/ground_shadow.fp"
+vertex_constants {
+  name: "view_proj"
+  type: CONSTANT_TYPE_VIEWPROJ
+}
+fragment_constants {
+  name: "tint"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+}
+fragment_constants {
+  name: "shadow"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+fragment_constants {
+  name: "borders"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: -1024.0
+    y: 1920.0
+    z: -768.0
+    w: 640.0
+  }
+}
+fragment_constants {
+  name: "radius"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 1024.0
+  }
+}
+fragment_constants {
+  name: "center"
+  type: CONSTANT_TYPE_USER
+  value {
+  }
+}

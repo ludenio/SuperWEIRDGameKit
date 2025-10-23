@@ -1,0 +1,46 @@
+tile_set: "/worlds/world_1/maps/collision_debug/collision_debug.tilesource"
+layers {
+  id: "layer1"
+  z: 0.0
+  cell {
+    x: -110
+    y: -89
+    tile: 126
+  }
+  cell {
+    x: -109
+    y: -89
+    tile: 127
+  }
+  cell {
+    x: -110
+    y: -88
+    tile: 94
+  }
+  cell {
+    x: -109
+    y: -88
+    tile: 95
+  }
+  cell {
+    x: 105
+    y: 47
+    tile: 126
+  }
+  cell {
+    x: 106
+    y: 47
+    tile: 127
+  }
+  cell {
+    x: 105
+    y: 48
+    tile: 94
+  }
+  cell {
+    x: 106
+    y: 48
+    tile: 95
+  }
+}
+material: "/builtins/materials/tile_map.material"

@@ -1,0 +1,1032 @@
+name: "main"
+instances {
+  id: "fps"
+  prototype: "/metrics/fps.go"
+  position {
+    x: 10.0
+    y: 20.0
+  }
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "hub"
+  prototype: "/assets/world_4/maps/hub/hub.go"
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
+  }
+}
+scale_along_z: 1
+embedded_instances {
+  id: "root"
+  children: "bg_objects"
+  children: "destroy_point"
+  children: "hub"
+  children: "middle_point"
+  children: "spawn_point"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
+  "}\n"
+  "components {\n"
+  "  id: \"main_menu\"\n"
+  "  component: \"/worlds/world_4/gui/main_menu.gui\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"player_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/hero.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/universal.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"price_label_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/price_label.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"workbench_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/workbench.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"progress_bar_canvas\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/progress_bar/progress_bar_canvas.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"progress_bar_progress\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/progress_bar/progress_bar_progress.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"buyer_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/npc/buyer/buyer.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"with_element_sprite_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/with_element_sprite.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"arrow_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/arrow.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"fx_container_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/fx_container.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_underground_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/universal_underground.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"seq_fx_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/seq_fx.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"urn_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/urn.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"tree_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/tree.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"table_shop_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/table_shop.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"square_border_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/square_border.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_nolight_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/universal_nolight.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"stone_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_4/objects/stone.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "camera"
+  data: "embedded_components {\n"
+  "  id: \"camera\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 4000.0\\n"
+  "auto_aspect_ratio: 1\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    y: 214.0
+    z: 330.0
+  }
+  rotation {
+    x: -0.57357645
+    w: 0.81915206
+  }
+}
+embedded_instances {
+  id: "spawn_point"
+  data: ""
+  position {
+    z: -576.0
+  }
+}
+embedded_instances {
+  id: "destroy_point"
+  data: ""
+  position {
+    x: 480.0
+    z: -507.0
+  }
+}
+embedded_instances {
+  id: "go"
+  data: ""
+}
+embedded_instances {
+  id: "bg_objects"
+  children: "bg_object"
+  children: "bg_object1"
+  children: "bg_object10"
+  children: "bg_object11"
+  children: "bg_object12"
+  children: "bg_object14"
+  children: "bg_object15"
+  children: "bg_object16"
+  children: "bg_object17"
+  children: "bg_object18"
+  children: "bg_object19"
+  children: "bg_object2"
+  children: "bg_object20"
+  children: "bg_object21"
+  children: "bg_object22"
+  children: "bg_object23"
+  children: "bg_object24"
+  children: "bg_object25"
+  children: "bg_object26"
+  children: "bg_object27"
+  children: "bg_object28"
+  children: "bg_object3"
+  children: "bg_object32"
+  children: "bg_object33"
+  children: "bg_object34"
+  children: "bg_object35"
+  children: "bg_object36"
+  children: "bg_object37"
+  children: "bg_object4"
+  children: "bg_object5"
+  children: "bg_object52"
+  children: "bg_object6"
+  children: "bg_object8"
+  children: "bg_object9"
+  data: ""
+  position {
+    z: 90.0
+  }
+}
+embedded_instances {
+  id: "bg_object"
+  data: ""
+  position {
+    x: 344.0
+    z: -768.0
+  }
+}
+embedded_instances {
+  id: "bg_object4"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 384.0\\n"
+  "  y: 512.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1626.0
+    z: -818.0
+  }
+}
+embedded_instances {
+  id: "bg_object2"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 886.0\\n"
+  "  y: 495.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -425.0
+    z: -820.0
+  }
+}
+embedded_instances {
+  id: "bg_object3"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"rocks3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1195.0\\n"
+  "  y: 451.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 682.0
+    z: -860.0
+  }
+}
+embedded_instances {
+  id: "bg_object1"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"froggo\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1112.0\\n"
+  "  y: 511.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -203.0
+    y: -64.0
+    z: 892.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+  }
+}
+embedded_instances {
+  id: "bg_object5"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 1112.0\\n"
+  "  y: 511.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2038.0
+    z: -644.0
+  }
+}
+embedded_instances {
+  id: "bg_object6"
+  children: "bg_object7"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1987.0
+    z: -499.0
+  }
+}
+embedded_instances {
+  id: "bg_object8"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2206.0
+    z: -536.0
+  }
+}
+embedded_instances {
+  id: "bg_object9"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2073.0
+    z: 607.0
+  }
+}
+embedded_instances {
+  id: "bg_object10"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2410.0
+    z: 239.0
+  }
+}
+embedded_instances {
+  id: "bg_object11"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2267.0
+    z: 501.0
+  }
+}
+embedded_instances {
+  id: "bg_object12"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2026.0
+    z: 127.0
+  }
+}
+embedded_instances {
+  id: "bg_object14"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2385.0
+    z: -715.0
+  }
+}
+embedded_instances {
+  id: "bg_object15"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1972.0
+    z: -56.0
+  }
+}
+embedded_instances {
+  id: "bg_object16"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1987.0
+    z: 424.0
+  }
+}
+embedded_instances {
+  id: "bg_object17"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2304.0
+    z: -337.0
+  }
+}
+embedded_instances {
+  id: "bg_object18"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2418.0
+    z: -96.0
+  }
+}
+embedded_instances {
+  id: "bg_object19"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2458.0
+    z: 573.0
+  }
+}
+embedded_instances {
+  id: "bg_object20"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1910.0
+    z: -728.0
+  }
+}
+embedded_instances {
+  id: "bg_object21"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 1961.0
+    z: -289.0
+  }
+}
+embedded_instances {
+  id: "bg_object22"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2229.0
+    z: 54.0
+  }
+}
+embedded_instances {
+  id: "bg_object23"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2418.0
+    z: 371.0
+  }
+}
+embedded_instances {
+  id: "bg_object24"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2073.0
+    z: 297.0
+  }
+}
+embedded_instances {
+  id: "bg_object25"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2521.0
+    z: -388.0
+  }
+}
+embedded_instances {
+  id: "bg_object26"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2649.0
+    z: 111.0
+  }
+}
+embedded_instances {
+  id: "bg_object27"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2435.0
+    z: -24.0
+  }
+}
+embedded_instances {
+  id: "bg_object28"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 383.0\\n"
+  "  y: 444.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -623.0
+    z: -846.0
+  }
+}
+embedded_instances {
+  id: "bg_object32"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2432.0
+    z: -712.0
+  }
+}
+embedded_instances {
+  id: "bg_object33"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2622.0
+    z: -266.0
+  }
+}
+embedded_instances {
+  id: "bg_object34"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_1_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 378.0\\n"
+  "  y: 508.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2654.0
+    z: 473.0
+  }
+}
+embedded_instances {
+  id: "bg_object35"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -52.0
+    z: -919.0
+  }
+}
+embedded_instances {
+  id: "bg_object36"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2336.0
+    z: -926.0
+  }
+}
+embedded_instances {
+  id: "bg_object37"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: -361.0
+    z: -792.0
+  }
+}
+embedded_instances {
+  id: "bg_object52"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_2_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 2020.0
+    z: -889.0
+  }
+}
+embedded_instances {
+  id: "bg_object7"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"tree_3_\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 367.0\\n"
+  "  y: 480.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_4/world_4.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    x: 512.0
+    z: -496.0
+  }
+}
+embedded_instances {
+  id: "middle_point"
+  data: ""
+  position {
+    z: -576.0
+  }
+}

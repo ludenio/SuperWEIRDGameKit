@@ -1,0 +1,412 @@
+name: "main"
+instances {
+  id: "fps"
+  prototype: "/metrics/fps.go"
+  position {
+    x: 8.0
+    y: 18.0
+  }
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "hub"
+  prototype: "/worlds/world_5/maps/hub/hub.go"
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "hub_bottom_border"
+  prototype: "/worlds/world_5/maps/hub/hub_bottom_border.go"
+  position {
+    z: 640.0
+  }
+}
+scale_along_z: 1
+embedded_instances {
+  id: "root"
+  children: "destroy_point"
+  children: "go1"
+  children: "go2"
+  children: "hub"
+  children: "hub_bottom_border"
+  children: "middle_point"
+  children: "spawn_point"
+  children: "wait_point_"
+  children: "wait_point_1"
+  children: "wait_point_10"
+  children: "wait_point_2"
+  children: "wait_point_3"
+  children: "wait_point_4"
+  children: "wait_point_5"
+  children: "wait_point_6"
+  children: "wait_point_7"
+  children: "wait_point_8"
+  children: "wait_point_9"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
+  "}\n"
+  "components {\n"
+  "  id: \"main_menu\"\n"
+  "  component: \"/worlds/world_5/gui/main_menu.gui\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"player_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/hero.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"light_source_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/light_source.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/universal.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"price_label_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/price_label.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"workbench_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/workbench.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"progress_bar_canvas\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/progress_bar/progress_bar_canvas.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"progress_bar_progress\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/progress_bar/progress_bar_progress.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"buyer_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/npc/buyer/buyer.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_nolight_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/universal_nolight.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"with_element_sprite_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/with_element_sprite.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"arrow_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/arrow.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"radius_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/radius.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"fx_container_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/fx_container.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"square_border_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/square_border.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_underground_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/universal_underground.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"fake_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/npc/fake/fake.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"seq_fx_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/seq_fx.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"foreground_dynamic_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/foreground_dynamic.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"background_dynamic_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/background_dynamic.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"underground_dynamic_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/underground_dynamic.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"urn_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/urn.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"tree_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/tree.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"table_shop_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_5/objects/table_shop.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "camera"
+  data: "embedded_components {\n"
+  "  id: \"camera\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 4000.0\\n"
+  "auto_aspect_ratio: 1\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    y: 214.0
+    z: 330.0
+  }
+  rotation {
+    x: -0.57357645
+    w: 0.81915206
+  }
+}
+embedded_instances {
+  id: "wait_point_1"
+  data: ""
+  position {
+    x: 374.0
+    z: -168.0
+  }
+}
+embedded_instances {
+  id: "wait_point_2"
+  data: ""
+  position {
+    x: -389.0
+    z: -345.0
+  }
+}
+embedded_instances {
+  id: "wait_point_3"
+  data: ""
+  position {
+    x: 261.0
+    z: -392.0
+  }
+}
+embedded_instances {
+  id: "wait_point_4"
+  data: ""
+  position {
+    x: -291.0
+    z: -469.0
+  }
+}
+embedded_instances {
+  id: "wait_point_5"
+  data: ""
+  position {
+    x: 681.0
+    z: -72.0
+  }
+}
+embedded_instances {
+  id: "wait_point_"
+  data: ""
+  position {
+    x: 992.0
+    z: -171.0
+  }
+}
+embedded_instances {
+  id: "wait_point_6"
+  data: ""
+  position {
+    x: 92.0
+    z: -148.0
+  }
+}
+embedded_instances {
+  id: "wait_point_7"
+  data: ""
+  position {
+    x: 614.0
+    z: -386.0
+  }
+}
+embedded_instances {
+  id: "wait_point_8"
+  data: ""
+  position {
+    x: 243.0
+    z: -273.0
+  }
+}
+embedded_instances {
+  id: "wait_point_9"
+  data: ""
+  position {
+    x: -98.0
+    z: -295.0
+  }
+}
+embedded_instances {
+  id: "wait_point_10"
+  data: ""
+  position {
+    x: 6.0
+    z: -193.0
+  }
+}
+embedded_instances {
+  id: "spawn_point"
+  data: ""
+  position {
+    z: -576.0
+  }
+}
+embedded_instances {
+  id: "destroy_point"
+  data: ""
+  position {
+    x: 480.0
+    z: -507.0
+  }
+}
+embedded_instances {
+  id: "go1"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"island1\\\"\\n"
+  "material: \\\"/assets/materials/nolight/ground.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_5/world_5.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"island1\\\"\\n"
+  "material: \\\"/assets/materials/nolight/ground.material\\\"\\n"
+  "size {\\n"
+  "  x: 535.0\\n"
+  "  y: 41.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/world_5/world_5.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 812.0\n"
+  "    y: 242.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    z: -1300.0
+  }
+}
+embedded_instances {
+  id: "go2"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"island2\\\"\\n"
+  "material: \\\"/assets/materials/nolight/ground.material\\\"\\n"
+  "size {\\n"
+  "  x: 256.0\\n"
+  "  y: 256.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"diffuse\\\"\\n"
+  "  texture: \\\"/assets/world_5/world_5.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1424.5\n"
+  "    y: 67.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"island2\\\"\\n"
+  "material: \\\"/assets/materials/nolight/ground.material\\\"\\n"
+  "size {\\n"
+  "  x: 256.0\\n"
+  "  y: 256.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"diffuse\\\"\\n"
+  "  texture: \\\"/assets/world_5/world_5.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -348.0\n"
+  "    y: 185.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    z: -1500.0
+  }
+}
+embedded_instances {
+  id: "middle_point"
+  data: ""
+  position {
+    x: 400.0
+    z: -576.0
+  }
+}

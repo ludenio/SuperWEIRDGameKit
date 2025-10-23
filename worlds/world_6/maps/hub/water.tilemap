@@ -1,0 +1,6 @@
+tile_set: "/assets/world_6/world_6.tilesource"
+layers {
+  id: "ground"
+  z: 0.0
+}
+material: "/assets/materials/water.material"

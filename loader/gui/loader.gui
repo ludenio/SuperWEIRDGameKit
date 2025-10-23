@@ -1,0 +1,45 @@
+script: "/loader/gui/loader.gui_script"
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+textures {
+  name: "kenney_ui"
+  texture: "/assets/kenney_ui.atlas"
+}
+nodes {
+  position {
+    x: -712.0
+    y: 615.0
+  }
+  size {
+    x: 64.0
+    y: 32.0
+  }
+  type: TYPE_BOX
+  texture: "kenney_ui/button_rectangle_flat"
+  id: "back_button"
+  inherit_alpha: true
+  slice9 {
+    x: 8.0
+    y: 8.0
+    z: 8.0
+    w: 8.0
+  }
+}
+nodes {
+  size {
+    x: 64.0
+    y: 32.0
+  }
+  type: TYPE_TEXT
+  text: "MENU"
+  font: "default"
+  id: "text"
+  parent: "back_button"
+  inherit_alpha: true
+}
+material: "/builtins/materials/gui.material"
+adjust_reference: ADJUST_REFERENCE_PARENT
+max_nodes: 8
+max_dynamic_textures: 8

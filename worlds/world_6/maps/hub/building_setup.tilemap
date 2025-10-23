@@ -1,0 +1,121 @@
+tile_set: "/assets/world_6/world_6.tilesource"
+layers {
+  id: "buildings"
+  z: 0.1
+  cell {
+    x: -12
+    y: -7
+    tile: 31
+  }
+  cell {
+    x: 0
+    y: -4
+    tile: 345
+  }
+  cell {
+    x: 1
+    y: -4
+    tile: 351
+  }
+  cell {
+    x: 2
+    y: -4
+    tile: 354
+  }
+  cell {
+    x: -4
+    y: -4
+    tile: 318
+  }
+  cell {
+    x: 6
+    y: -3
+    tile: 340
+  }
+  cell {
+    x: 7
+    y: -3
+    tile: 346
+  }
+  cell {
+    x: 0
+    y: -2
+    tile: 344
+  }
+  cell {
+    x: 6
+    y: -2
+    tile: 339
+  }
+  cell {
+    x: -7
+    y: -2
+    tile: 349
+  }
+  cell {
+    x: -6
+    y: -2
+    tile: 342
+  }
+  cell {
+    x: 3
+    y: -1
+    tile: 338
+  }
+  cell {
+    x: 9
+    y: -1
+    tile: 348
+  }
+  cell {
+    x: -7
+    y: -1
+    tile: 343
+  }
+  cell {
+    x: -4
+    y: -1
+    tile: 350
+  }
+  cell {
+    x: -2
+    y: -1
+    tile: 337
+  }
+  cell {
+    x: 6
+    y: 0
+    tile: 347
+  }
+  cell {
+    x: 9
+    y: 1
+    tile: 353
+  }
+  cell {
+    x: -7
+    y: 1
+    tile: 341
+  }
+  cell {
+    x: 5
+    y: 2
+    tile: 352
+  }
+  cell {
+    x: 9
+    y: 3
+    tile: 356
+  }
+  cell {
+    x: 8
+    y: 4
+    tile: 355
+  }
+  cell {
+    x: 15
+    y: 10
+    tile: 31
+  }
+}
+material: "/builtins/materials/tile_map.material"

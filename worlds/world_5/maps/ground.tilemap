@@ -1,0 +1,16 @@
+tile_set: "/assets/world_5/world_5.tilesource"
+layers {
+  id: "layer1"
+  z: 0.0
+  cell {
+    x: -1251
+    y: -1047
+    tile: 367
+  }
+  cell {
+    x: 1811
+    y: 1352
+    tile: 367
+  }
+}
+material: "/assets/materials/nolight/tile_map.material"

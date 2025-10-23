@@ -1,0 +1,638 @@
+images {
+  image: "/assets/world_1/sprites/arrow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/bipka.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_arm.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_blink.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_body.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_head.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_leg.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_shadow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/blacksmith_shoulder.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/bounds_large.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/bounds_medium.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/bounds_small.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/bush.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_00.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_01.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_02.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_03.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_04.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_05.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_06.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_07.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_08.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/cauldron_09.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/chestOpen_0000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/chestOpen_0001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/chestOpen_0002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/chestOpen_0003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/chestOpen_0004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/coin.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/craft1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/craft2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/craft3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/demand_craft1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/demand_craft2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/demand_craft3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/demand_resource1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/demand_resource2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/demand_resource3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_iron.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_iron_shield.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_iron_sword.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_none.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_stone.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_stone_shield.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_stone_sword.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/element_wood.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/foundation.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00005.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_door_00006.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00005.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/furnace_flame_00006.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/fx_boom.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/fx_spark.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/iron.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/iron_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/metall.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/metall_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/none.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/progress_bar.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/progress_green.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/progress_red.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/progress_yellow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/resource1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/resource2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/resource3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s4.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s5.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s6.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s7.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s8.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s9.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s10.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s11.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s12.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s13.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s14.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s15.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/s16.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/stone.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/stone_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/store.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/table_blueprint.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/table_shop.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/tree.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/tree_1.png"
+  pivot_y: 0.9
+}
+images {
+  image: "/assets/world_1/sprites/tree_2.png"
+  pivot_y: 0.9
+}
+images {
+  image: "/assets/world_1/sprites/tree_3.png"
+  pivot_y: 0.9
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00005.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00006.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00007.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00008.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00009.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/treeOut_00010.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00005.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00006.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00007.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00008.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/urn_00009.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_arm_L.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_arm_R.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_blink.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_body.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_chest.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_head.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_jaw.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_leg.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_shadow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_shoulder R.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_1/sprites/viking_shoulder_L.png"
+  pivot_y: 1.0
+}
+animations {
+  id: "urn_react"
+  images {
+    image: "/assets/world_1/sprites/urn_00000.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00001.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00002.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00003.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00004.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00005.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00006.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00007.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00008.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/urn_00009.png"
+    pivot_y: 1.0
+  }
+  fps: 18
+}
+animations {
+  id: "tree_collect"
+  images {
+    image: "/assets/world_1/sprites/treeOut_00000.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00001.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00002.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00003.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00004.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00005.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00006.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00007.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00008.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00009.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_1/sprites/treeOut_00010.png"
+    pivot_y: 1.0
+  }
+  fps: 18
+}
+animations {
+  id: "urn_idle"
+  images {
+    image: "/assets/world_1/sprites/urn_00000.png"
+    pivot_y: 1.0
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 0
+}
+extrude_borders: 2

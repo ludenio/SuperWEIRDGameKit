@@ -1,0 +1,553 @@
+script: "/main/gui/main_menu.gui_script"
+fonts {
+  name: "default"
+  font: "/builtins/fonts/default.font"
+}
+textures {
+  name: "game"
+  texture: "/assets/world_2/world_2.atlas"
+}
+textures {
+  name: "gamepad"
+  texture: "/assets/gamepad.atlas"
+}
+textures {
+  name: "kenney_ui"
+  texture: "/assets/kenney_ui.atlas"
+}
+nodes {
+  position {
+    x: 874.0
+    y: 606.0
+  }
+  scale {
+    x: 1.5
+    y: 1.5
+  }
+  type: TYPE_BOX
+  id: "money"
+  adjust_mode: ADJUST_MODE_STRETCH
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  size {
+    x: 100.0
+    y: 30.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  id: "box7"
+  parent: "money"
+  inherit_alpha: true
+  alpha: 0.5
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 15.333333
+  }
+  scale {
+    x: 2.0
+    y: 2.0
+  }
+  size {
+    x: 40.0
+    y: 40.0
+  }
+  type: TYPE_TEXT
+  text: "10"
+  font: "default"
+  id: "money_text"
+  pivot: PIVOT_E
+  parent: "box7"
+}
+nodes {
+  position {
+    x: 20.333332
+    y: -15.0
+  }
+  size {
+    x: 30.0
+    y: 30.0
+  }
+  type: TYPE_BOX
+  texture: "game/coin"
+  id: "money_icon"
+  yanchor: YANCHOR_TOP
+  pivot: PIVOT_W
+  parent: "box7"
+}
+nodes {
+  size {
+    x: 48.0
+    y: 48.0
+  }
+  type: TYPE_BOX
+  texture: "game/coin"
+  id: "animated_element"
+  inherit_alpha: true
+  enabled: false
+}
+nodes {
+  position {
+    x: 100.0
+    y: 100.0
+  }
+  type: TYPE_BOX
+  id: "joystick"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "gamepad/shadedDark07"
+  id: "analog_bg"
+  parent: "joystick"
+  inherit_alpha: true
+  alpha: 0.4
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "gamepad/shadedDark01"
+  id: "analog"
+  parent: "joystick"
+  inherit_alpha: true
+  alpha: 0.4
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 480.0
+    y: 320.0
+  }
+  type: TYPE_BOX
+  id: "input_preview"
+  adjust_mode: ADJUST_MODE_STRETCH
+  inherit_alpha: true
+  alpha: 0.5
+  size_mode: SIZE_MODE_AUTO
+  visible: false
+}
+nodes {
+  position {
+    x: 360.0
+    y: -190.0
+  }
+  scale {
+    x: 0.5
+    y: 0.5
+  }
+  type: TYPE_BOX
+  id: "joystick_preview"
+  adjust_mode: ADJUST_MODE_STRETCH
+  parent: "input_preview"
+  size_mode: SIZE_MODE_AUTO
+  enabled: false
+  visible: false
+}
+nodes {
+  size {
+    x: 396.0
+    y: 436.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/input_hit_frame"
+  id: "joystick_preview_shadow"
+  parent: "joystick_preview"
+  slice9 {
+    x: 32.0
+    y: 32.0
+    z: 32.0
+    w: 32.0
+  }
+  alpha: 0.3
+}
+nodes {
+  size {
+    x: 380.0
+    y: 420.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/input_hit_frame"
+  id: "joystick_preview_canvas"
+  parent: "joystick_preview"
+  slice9 {
+    x: 32.0
+    y: 32.0
+    z: 32.0
+    w: 32.0
+  }
+}
+nodes {
+  position {
+    y: 60.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/shadedDark07"
+  id: "analog_bg1"
+  parent: "joystick_preview_canvas"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -60.0
+    y: 60.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/shadedDark01"
+  id: "analog1"
+  parent: "joystick_preview_canvas"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 53.0
+    y: -102.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/hand"
+  id: "box1"
+  parent: "analog1"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 343.0
+    y: -215.0
+  }
+  scale {
+    x: 0.5
+    y: 0.5
+  }
+  type: TYPE_BOX
+  id: "keyboard_preview"
+  parent: "input_preview"
+  slice9 {
+    x: 32.0
+    y: 32.0
+    z: 32.0
+    w: 32.0
+  }
+  enabled: false
+  visible: false
+}
+nodes {
+  size {
+    x: 464.0
+    y: 336.0
+  }
+  color {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/input_hit_frame"
+  id: "keyboard_preview_shadow"
+  parent: "keyboard_preview"
+  slice9 {
+    x: 32.0
+    y: 32.0
+    z: 32.0
+    w: 32.0
+  }
+  alpha: 0.3
+}
+nodes {
+  size {
+    x: 448.0
+    y: 320.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/input_hit_frame"
+  id: "keyboard_preview_canvas"
+  parent: "keyboard_preview"
+  slice9 {
+    x: 32.0
+    y: 32.0
+    z: 32.0
+    w: 32.0
+  }
+}
+nodes {
+  position {
+    y: 64.0
+  }
+  color {
+    x: 0.2
+    y: 0.2
+    z: 0.2
+  }
+  type: TYPE_BOX
+  texture: "gamepad/up"
+  id: "up1"
+  parent: "keyboard_preview_canvas"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: -128.0
+    y: -64.0
+  }
+  color {
+    x: 0.2
+    y: 0.2
+    z: 0.2
+  }
+  type: TYPE_BOX
+  texture: "gamepad/left"
+  id: "left1"
+  parent: "keyboard_preview_canvas"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: -64.0
+  }
+  color {
+    x: 0.2
+    y: 0.2
+    z: 0.2
+  }
+  type: TYPE_BOX
+  texture: "gamepad/down"
+  id: "down1"
+  parent: "keyboard_preview_canvas"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 128.0
+    y: -64.0
+  }
+  color {
+    x: 0.2
+    y: 0.2
+    z: 0.2
+  }
+  type: TYPE_BOX
+  texture: "gamepad/right"
+  id: "right1"
+  parent: "keyboard_preview_canvas"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    x: 920.0
+    y: 320.0
+  }
+  type: TYPE_BOX
+  id: "zoom"
+  adjust_mode: ADJUST_MODE_STRETCH
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+  enabled: false
+  visible: false
+}
+nodes {
+  position {
+    y: 40.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/button"
+  id: "zoom_in"
+  parent: "zoom"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "gamepad/plus"
+  id: "zoom_in_icon"
+  parent: "zoom_in"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  position {
+    y: -40.0
+  }
+  type: TYPE_BOX
+  texture: "gamepad/button"
+  id: "zoom_out"
+  parent: "zoom"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+nodes {
+  type: TYPE_BOX
+  texture: "gamepad/minus"
+  id: "zoom_out_icon"
+  parent: "zoom_out"
+  inherit_alpha: true
+  size_mode: SIZE_MODE_AUTO
+}
+material: "/builtins/materials/gui.material"
+layouts {
+  name: "Landscape"
+  nodes {
+    position {
+      x: 1216.0
+      y: 684.0
+    }
+    type: TYPE_BOX
+    id: "money"
+    overridden_fields: 1
+  }
+  nodes {
+    position {
+      x: -15.333333
+    }
+    type: TYPE_BOX
+    id: "box7"
+    parent: "money"
+    overridden_fields: 1
+  }
+  nodes {
+    position {
+      x: 640.0
+      y: 360.0
+    }
+    type: TYPE_BOX
+    id: "input_preview"
+    adjust_mode: ADJUST_MODE_STRETCH
+    overridden_fields: 1
+    overridden_fields: 17
+  }
+  nodes {
+    position {
+      x: 521.0
+      y: -232.0
+    }
+    type: TYPE_BOX
+    id: "joystick_preview"
+    parent: "input_preview"
+    overridden_fields: 1
+  }
+  nodes {
+    position {
+      x: 502.0
+      y: -254.0
+    }
+    type: TYPE_BOX
+    id: "keyboard_preview"
+    adjust_mode: ADJUST_MODE_STRETCH
+    parent: "input_preview"
+    overridden_fields: 1
+    overridden_fields: 17
+  }
+  nodes {
+    position {
+      x: 1220.0
+      y: 360.0
+    }
+    scale {
+      x: 1.5
+      y: 1.5
+    }
+    type: TYPE_BOX
+    id: "zoom"
+    overridden_fields: 1
+    overridden_fields: 3
+  }
+}
+layouts {
+  name: "Portrait"
+  nodes {
+    position {
+      x: 605.0
+      y: 1225.0
+    }
+    scale {
+      x: 3.0
+      y: 3.0
+    }
+    type: TYPE_BOX
+    id: "money"
+    adjust_mode: ADJUST_MODE_STRETCH
+    overridden_fields: 1
+    overridden_fields: 3
+    overridden_fields: 17
+  }
+  nodes {
+    scale {
+      x: 1.5
+      y: 1.5
+    }
+    type: TYPE_BOX
+    id: "joystick"
+    overridden_fields: 3
+  }
+  nodes {
+    position {
+      x: 360.0
+      y: 640.0
+    }
+    type: TYPE_BOX
+    id: "input_preview"
+    overridden_fields: 1
+  }
+  nodes {
+    position {
+      x: 185.0
+      y: -450.0
+    }
+    scale {
+      x: 0.75
+      y: 0.75
+    }
+    type: TYPE_BOX
+    id: "joystick_preview"
+    parent: "input_preview"
+    overridden_fields: 1
+    overridden_fields: 3
+  }
+  nodes {
+    position {
+      x: 168.0
+      y: -475.0
+    }
+    scale {
+      x: 0.75
+      y: 0.75
+    }
+    type: TYPE_BOX
+    id: "keyboard_preview"
+    parent: "input_preview"
+    overridden_fields: 1
+    overridden_fields: 3
+  }
+  nodes {
+    position {
+      x: 640.0
+      y: 786.0
+    }
+    scale {
+      x: 2.0
+      y: 2.0
+    }
+    type: TYPE_BOX
+    id: "zoom"
+    overridden_fields: 1
+    overridden_fields: 3
+  }
+}
+adjust_reference: ADJUST_REFERENCE_PARENT

@@ -1,0 +1,100 @@
+key_trigger {
+  input: KEY_W
+  action: "up"
+}
+key_trigger {
+  input: KEY_A
+  action: "left"
+}
+key_trigger {
+  input: KEY_S
+  action: "down"
+}
+key_trigger {
+  input: KEY_D
+  action: "right"
+}
+key_trigger {
+  input: KEY_SPACE
+  action: "interact"
+}
+key_trigger {
+  input: KEY_F1
+  action: "F1"
+}
+key_trigger {
+  input: KEY_F2
+  action: "F2"
+}
+key_trigger {
+  input: KEY_F3
+  action: "F3"
+}
+key_trigger {
+  input: KEY_F4
+  action: "F4"
+}
+key_trigger {
+  input: KEY_F5
+  action: "F5"
+}
+key_trigger {
+  input: KEY_F6
+  action: "F6"
+}
+key_trigger {
+  input: KEY_F9
+  action: "F9"
+}
+key_trigger {
+  input: KEY_B
+  action: "B"
+}
+key_trigger {
+  input: KEY_UP
+  action: "up"
+}
+key_trigger {
+  input: KEY_DOWN
+  action: "down"
+}
+key_trigger {
+  input: KEY_LEFT
+  action: "left"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "right"
+}
+key_trigger {
+  input: KEY_BACKSPACE
+  action: "key_backspace"
+}
+key_trigger {
+  input: KEY_Q
+  action: "rotate_left"
+}
+key_trigger {
+  input: KEY_E
+  action: "rotate_right"
+}
+key_trigger {
+  input: KEY_F7
+  action: "F7"
+}
+mouse_trigger {
+  input: MOUSE_BUTTON_1
+  action: "touch"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_UP
+  action: "wheel_up"
+}
+mouse_trigger {
+  input: MOUSE_WHEEL_DOWN
+  action: "wheel_down"
+}
+text_trigger {
+  input: TEXT
+  action: "text"
+}

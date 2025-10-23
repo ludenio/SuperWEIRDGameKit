@@ -1,0 +1,81 @@
+local druid = require("druid.druid")
+local input = require("druid.extended.input")
+local visual_settings = require "main.visual_settings"
+
+
+local function button_1_callback(self)
+	visual_settings.bg_color_r = 0
+	visual_settings.bg_color_g = 0
+	visual_settings.bg_color_b = 0
+	msg.post("loader:/root#script", hash("load_world"), {world_index = 1})
+end
+
+local function button_2_callback(self)
+	visual_settings.bg_color_r = 2
+	visual_settings.bg_color_g = 0
+	visual_settings.bg_color_b = 0
+	msg.post("loader:/root#script", hash("load_world"), {world_index = 2})
+end
+
+local function button_3_callback(self)
+	visual_settings.bg_color_r = 68
+	visual_settings.bg_color_g = 102
+	visual_settings.bg_color_b = 78
+	msg.post("loader:/root#script", hash("load_world"), {world_index = 3})
+end
+
+local function button_4_callback(self)
+	visual_settings.bg_color_r = 233
+	visual_settings.bg_color_g = 181
+	visual_settings.bg_color_b = 35
+	msg.post("loader:/root#script", hash("load_world"), {world_index = 4})
+end
+
+local function button_5_callback(self)
+	visual_settings.bg_color_r = 155
+	visual_settings.bg_color_g = 200
+	visual_settings.bg_color_b = 200
+	msg.post("loader:/root#script", hash("load_world"), {world_index = 5})
+end
+
+local function button_6_callback(self)
+	visual_settings.bg_color_r = 151
+	visual_settings.bg_color_g = 120
+	visual_settings.bg_color_b = 151
+	msg.post("loader:/root#script", hash("load_world"), {world_index = 6})
+end
+
+local function header_callback(self)
+	local url = "https://superweird.shop/?utm_source=superweirdgamekit&utm_medium=gamekitbuild"
+	sys.open_url(url, {target = "_blank"})
+end
+
+
+function init(self)
+	druid.register("input", input)
+	self.druid = druid.new(self)
+	self.button = self.druid:new_button("button_1", button_1_callback)
+	self.button = self.druid:new_button("button_2", button_2_callback)
+	self.button = self.druid:new_button("button_3", button_3_callback)
+	self.button = self.druid:new_button("button_4", button_4_callback)
+	self.button = self.druid:new_button("button_5", button_5_callback)
+	self.button = self.druid:new_button("button_6", button_6_callback)
+	self.button = self.druid:new_button("header", header_callback)
+end
+
+function final(self)
+	self.druid:final()
+end
+
+function update(self, dt)
+	self.druid:update(dt)
+end
+
+function on_message(self, message_id, message, sender)
+	self.druid:on_message(message_id, message, sender)
+end
+
+
+function on_input(self, action_id, action)
+	self.druid:on_input(action_id, action)
+end

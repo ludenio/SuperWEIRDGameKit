@@ -1,0 +1,33 @@
+local druid = require("druid.druid")
+local h_enable_button = hash("enable_button")
+
+
+function init(self)
+	self.druid = druid.new(self)
+	self.button = self.druid:new_button("back_button", function ()
+		msg.post("/root#script", hash("unload_world"))
+		gui.set_enabled(gui.get_node("back_button"), false)
+	end)
+	
+	gui.set_enabled(gui.get_node("back_button"), false) -- initially button is disabled
+end
+
+function final(self)
+	self.druid:final()
+end
+
+function update(self, dt)
+	self.druid:update(dt)
+end
+
+function on_message(self, message_id, message, sender)
+	self.druid:on_message(message_id, message, sender)
+	if message_id == h_enable_button then
+		gui.set_enabled(gui.get_node("back_button"), true)
+	end
+end
+
+
+function on_input(self, action_id, action)
+	self.druid:on_input(action_id, action)
+end

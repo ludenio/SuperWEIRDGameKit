@@ -1,0 +1,18 @@
+name: "model"
+tags: "underground_creature"
+vertex_program: "/assets/materials/nolight/underground_creature_spine.vp"
+fragment_program: "/assets/materials/nolight/underground_creature_spine.fp"
+vertex_constants {
+  name: "world_view_proj"
+  type: CONSTANT_TYPE_WORLDVIEWPROJ
+}
+fragment_constants {
+  name: "tint"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+    w: 1.0
+  }
+}

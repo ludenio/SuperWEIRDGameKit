@@ -1,0 +1,78 @@
+name: "sprite_normal"
+tags: "ground_bottom"
+vertex_program: "/assets/materials/ground/ground.vp"
+fragment_program: "/assets/materials/ground/ground.fp"
+vertex_constants {
+  name: "view_proj"
+  type: CONSTANT_TYPE_VIEWPROJ
+}
+fragment_constants {
+  name: "ambient_color"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 0.6
+    y: 0.6
+    z: 1.0
+    w: 0.2
+  }
+}
+fragment_constants {
+  name: "falloff"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 0.4
+    y: 3.0
+    z: 20.0
+    w: 0.5
+  }
+}
+fragment_constants {
+  name: "light_positions"
+  type: CONSTANT_TYPE_USER
+  value {
+  }
+}
+fragment_constants {
+  name: "light_colors"
+  type: CONSTANT_TYPE_USER
+  value {
+  }
+}
+fragment_constants {
+  name: "directional_direction"
+  type: CONSTANT_TYPE_USER
+  value {
+  }
+}
+fragment_constants {
+  name: "directional_color"
+  type: CONSTANT_TYPE_USER
+  value {
+  }
+}
+fragment_constants {
+  name: "iRotation"
+  type: CONSTANT_TYPE_USER_MATRIX4
+  value {
+  }
+}
+fragment_constants {
+  name: "light_source_count"
+  type: CONSTANT_TYPE_USER
+  value {
+  }
+}
+fragment_constants {
+  name: "lights_max"
+  type: CONSTANT_TYPE_USER
+  value {
+    x: 100.0
+  }
+}
+samplers {
+  name: "diffuse"
+  wrap_u: WRAP_MODE_CLAMP_TO_EDGE
+  wrap_v: WRAP_MODE_CLAMP_TO_EDGE
+  filter_min: FILTER_MODE_MIN_DEFAULT
+  filter_mag: FILTER_MODE_MAG_DEFAULT
+}

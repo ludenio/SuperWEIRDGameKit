@@ -1,0 +1,231 @@
+name: "main"
+instances {
+  id: "fps"
+  prototype: "/metrics/fps.go"
+  position {
+    x: 10.0
+    y: 20.0
+  }
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "hub"
+  prototype: "/worlds/world_6/maps/hub/hub.go"
+  rotation {
+    x: -0.70710677
+    w: 0.70710677
+  }
+}
+instances {
+  id: "seq_fx"
+  prototype: "/worlds/world_6/seq_fx.go"
+}
+scale_along_z: 1
+embedded_instances {
+  id: "root"
+  children: "bg_objects"
+  children: "destroy_point"
+  children: "hub"
+  children: "middle_point"
+  children: "seq_fx"
+  children: "spawn_point"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
+  "}\n"
+  "components {\n"
+  "  id: \"main_menu\"\n"
+  "  component: \"/worlds/world_6/gui/main_menu.gui\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"player_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/hero.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/universal.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"price_label_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/price_label.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"workbench_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/workbench.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"progress_bar_canvas\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/progress_bar/progress_bar_canvas.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"progress_bar_progress\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/progress_bar/progress_bar_progress.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"buyer_factory\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/npc/buyer/buyer.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"with_element_sprite_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/with_element_sprite.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"arrow_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/arrow.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"fx_container_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/fx_container.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"universal_underground_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/universal_underground.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"urn_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/urn.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"tree_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/tree.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"foreground_dynamic_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/foreground_dynamic.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"background_dynamic_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/background_dynamic.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"underground_dynamic_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/underground_dynamic.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"table_shop_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/objects/table_shop.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"cloud_creature_go1\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/cloud_creature_angler.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"cloud_creature_go3\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/cloud_creature_snake.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"cloud_creature_go2\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/cloud_creature_kolibri.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"seq_fx_go\"\n"
+  "  type: \"factory\"\n"
+  "  data: \"prototype: \\\"/worlds/world_6/seq_fx.go\\\"\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "camera"
+  data: "embedded_components {\n"
+  "  id: \"camera\"\n"
+  "  type: \"camera\"\n"
+  "  data: \"aspect_ratio: 1.0\\n"
+  "fov: 0.7854\\n"
+  "near_z: 0.1\\n"
+  "far_z: 8000.0\\n"
+  "auto_aspect_ratio: 1\\n"
+  "\"\n"
+  "}\n"
+  ""
+  position {
+    y: 214.0
+    z: 330.0
+  }
+  rotation {
+    x: -0.57357645
+    w: 0.81915206
+  }
+}
+embedded_instances {
+  id: "spawn_point"
+  data: ""
+  position {
+    z: -576.0
+  }
+}
+embedded_instances {
+  id: "destroy_point"
+  data: ""
+  position {
+    x: 480.0
+    z: -507.0
+  }
+}
+embedded_instances {
+  id: "go"
+  data: ""
+}
+embedded_instances {
+  id: "bg_objects"
+  children: "bg_object"
+  data: ""
+}
+embedded_instances {
+  id: "bg_object"
+  data: ""
+  position {
+    x: 344.0
+    z: -768.0
+  }
+}
+embedded_instances {
+  id: "middle_point"
+  data: ""
+  position {
+    z: -576.0
+  }
+}

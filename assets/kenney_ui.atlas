@@ -1,0 +1,307 @@
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_e.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_e_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_n.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_n_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_s.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_s_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_w.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_basic_w_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_e.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_e_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_n.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_n_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_s.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_s_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_w.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/arrow_decorative_w_small.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_border.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_depth_border.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_depth_flat.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_depth_gloss.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_depth_gradient.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_depth_line.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_flat.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_gloss.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_gradient.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_rectangle_line.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_border.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_depth_border.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_depth_flat.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_depth_gloss.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_depth_gradient.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_depth_line.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_flat.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_gloss.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_gradient.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_round_line.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_border.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_depth_border.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_depth_flat.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_depth_gloss.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_depth_gradient.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_depth_line.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_flat.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_gloss.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_gradient.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/button_square_line.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_round_color.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_round_grey.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_round_grey_circle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_round_round_circle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_color.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_color_checkmark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_color_cross.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_color_square.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_grey.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_grey_checkmark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_grey_cross.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/check_square_grey_square.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/divider.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/divider_edges.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_arrow_down_dark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_arrow_down_light.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_arrow_down_outline.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_arrow_up_dark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_arrow_up_light.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_arrow_up_outline.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_checkmark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_circle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_cross.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_outline_checkmark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_outline_circle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_outline_cross.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_outline_square.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_play_dark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_play_light.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_play_outline.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_repeat_dark.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_repeat_light.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_repeat_outline.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/icon_square.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/input_outline_rectangle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/input_outline_square.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/input_rectangle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/input_square.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_hangle.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_horizontal_color.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_horizontal_color_section.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_horizontal_color_section_wide.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_horizontal_grey.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_horizontal_grey_section.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_horizontal_grey_section_wide.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_vertical_color.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_vertical_color_section.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_vertical_color_section_wide.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_vertical_grey.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_vertical_grey_section.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/slide_vertical_grey_section_wide.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/star.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/star_outline.png"
+}
+images {
+  image: "/assets/images/gui/kenney_ui/star_outline_depth.png"
+}
+images {
+  image: "/assets/images/baner.png"
+}
+images {
+  image: "/assets/images/header.jpg"
+}
+extrude_borders: 2

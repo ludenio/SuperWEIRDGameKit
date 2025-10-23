@@ -1,0 +1,34 @@
+tile_set: "/assets/world_6/world_6.tilesource"
+layers {
+  id: "ground"
+  z: 0.0
+  cell {
+    x: -57
+    y: -45
+    tile: 31
+  }
+  cell {
+    x: 62
+    y: 40
+    tile: 31
+  }
+}
+layers {
+  id: "debug"
+  z: 0.0
+}
+layers {
+  id: "ground2"
+  z: 1.0E-5
+  cell {
+    x: -57
+    y: -45
+    tile: 31
+  }
+  cell {
+    x: 62
+    y: 40
+    tile: 31
+  }
+}
+material: "/assets/materials/nolight/ground.material"

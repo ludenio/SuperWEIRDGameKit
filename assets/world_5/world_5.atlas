@@ -1,0 +1,800 @@
+images {
+  image: "/assets/world_5/sprites/_s12.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/_s13.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/arrow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bipka.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/border.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_body.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_brow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_chest.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_ear.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_eye.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_hand.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_happy.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_head.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_lamp.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_lampshine.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_leg.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_shadow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_shine.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bot_shoulder.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bounds_large.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bounds_medium.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/bounds_small.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/btn_skip_lvl.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/chpok_0000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/chpok_0001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/chpok_0002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/chpok_0003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/cloud.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/cloud1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/cloud2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/cloud3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/cloud4.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/coin.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_00.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_01.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_02.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_03.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_04.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_05.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_06.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_07.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_08.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_09.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_10.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/collect_11.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/counter.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/craft1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/craft2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/craft3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/demand_craft1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/demand_craft2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/demand_craft3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/demand_resource1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/demand_resource3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/demand_resourse2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0005.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0006.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0007.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0008.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0009.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0010.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/dissapear_0011.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_buff_yellow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_heart.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_pickaxe.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_shield.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_shield_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_sword.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_iron_sword_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_none.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_smile_face.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone_.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone_shield.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone_shield_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone_sword.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_stone_sword_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_wood.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/element_wood_stroke.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/fence_1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/fence_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/fence_metall_1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/fence_metall_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/foundation.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/fx_boom.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/fx_spark.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/iron.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/iron_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/island1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/island2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_arm_mid.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_body.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_brow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_eye.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_finger.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_head.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_leg.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_palm.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_shadow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_shoulder_joint.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/main_shoulders.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/metall.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/metall_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/mine_entry.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/mine_exit.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/mountain.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/none.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00000.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00001.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00002.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00003.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00004.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00005.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00006.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00007.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00008.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00009.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00010.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00011.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00012.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00013.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00014.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/portal_00015.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/progress_bar.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/progress_green.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/progress_red.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/progress_yellow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/radius.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/recipe_iron_shield.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/recipe_iron_sword.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/recipe_stone_shield.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/recipe_stone_sword.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/resource1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/resource2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/resource3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s4.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s5.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s6.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s7.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s8.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s9.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s10.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s11.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s12.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s13.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s14.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s15.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/s16.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/shop_base.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/shop_chest.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/shop_close.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/shop_open.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/shop_shine.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/show_video_icon.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/square_border.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/stone.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/stone_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/store.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/table_blueprint.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/table_shop.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tower.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tower2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_debris1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_debris2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_debris3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_eat.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_front.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_idle.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_pillar.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/trashbin_shadow.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_1.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_2.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_3.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_bottom.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_midbottom.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_midtop.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/tree_top.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/urn.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/urn_.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/with_lil_froggy.png"
+  pivot_y: 1.0
+}
+images {
+  image: "/assets/world_5/sprites/workbench.png"
+  pivot_y: 1.0
+}
+animations {
+  id: "tree_collect"
+  images {
+    image: "/assets/world_5/sprites/chpok_0000.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_5/sprites/chpok_0001.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_5/sprites/chpok_0002.png"
+    pivot_y: 1.0
+  }
+  images {
+    image: "/assets/world_5/sprites/chpok_0003.png"
+    pivot_y: 1.0
+  }
+}
+extrude_borders: 2
