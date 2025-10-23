@@ -224,7 +224,7 @@ function M.spawn(uid, model)
     object.execution_context = object.execution_context or {}
     object.execution_context.state = 0
     object.vanted_sprite = "element_stone"
-    timer.delay(0.5, false, function()
+    timer.delay(0.35, false, function()
         object.hold = false
     end)
 end

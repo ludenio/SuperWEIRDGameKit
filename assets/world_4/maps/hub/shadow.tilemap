@@ -3184,4 +3184,4 @@ layers {
     tile: 165
   }
 }
-material: "/assets/materials/ground/ground_bottom.material"
+material: "/assets/materials/nolight/ground.material"
