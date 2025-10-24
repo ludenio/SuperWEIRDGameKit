@@ -8,7 +8,7 @@ Früh in der Entwicklung haben wir viele Experimente mit visuellen Stilen und Ga
 
 In diesem Repository findest du sechs verschiedene visuelle Stile ([video](https://youtu.be/RJwOEDY3MP4)) sowie die Spiellogik eines Shop-/Produktionssimulators. Der Spieler erfüllt Kundenbestellungen und erweitert die Produktion. Du kannst das [demo on itch.io](https://ludenio.itch.io/superweird-game-kit?utm_source=superweirdgamekit&utm_medium=github) spielen.
 
-[![Project Video](youtube_intro_cover.png)](https://youtu.be/PM8bngSynXQ)
+[![Project Video](youtube_intro_cover.png)](https://youtu.be/Jjm47KMF-V0)
 
 Tritt unserem [Discord](https://discord.gg/ludenio) bei, um uns zu erzählen, was du mit diesen Prototypen bauen würdest. Oder schau auf unserem [YouTube channel](https://www.youtube.com/@ludenio) vorbei — dort gibt es viele interessante Inhalte, darunter die [SuperWEIRD dev diaries](https://www.youtube.com/@ludenio/videos).
 

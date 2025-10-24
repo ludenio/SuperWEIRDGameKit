@@ -8,7 +8,7 @@
 
 このリポジトリには、6種類の異なるビジュアルスタイル（[video](https://youtu.be/RJwOEDY3MP4)）と、ショップ／生産シミュレーターのゲームプレイロジックが含まれています。プレイヤーは顧客の注文をこなし、生産を拡大していきます。[demo on itch.io](https://ludenio.itch.io/superweird-game-kit?utm_source=superweirdgamekit&utm_medium=github) を遊ぶこともできます。
 
-[![Project Video](youtube_intro_cover.png)](https://youtu.be/PM8bngSynXQ)
+[![Project Video](youtube_intro_cover.png)](https://youtu.be/Jjm47KMF-V0)
 
 これらのプロトタイプで何を作るか、ぜひ [Discord](https://discord.gg/ludenio) に参加して教えてください。あるいは私たちの [YouTube channel](https://www.youtube.com/@ludenio) もご覧ください。[SuperWEIRD dev diaries](https://www.youtube.com/@ludenio/videos) など、見どころがたくさんあります。
 

@@ -8,7 +8,7 @@
 
 इस रिपॉज़िटरी में आपको छह अलग-अलग विज़ुअल स्टाइल्स ([video](https://youtu.be/RJwOEDY3MP4)) और शॉप/प्रोडक्शन सिम्युलेटर की गेमप्ले लॉजिक मिलेगी। खिलाड़ी ग्राहक ऑर्डर पूरे करता है और उत्पादन का विस्तार करता है। आप [demo on itch.io](https://ludenio.itch.io/superweird-game-kit?utm_source=superweirdgamekit&utm_medium=github) खेल सकते हैं।
 
-[![Project Video](youtube_intro_cover.png)](https://youtu.be/PM8bngSynXQ)
+[![Project Video](youtube_intro_cover.png)](https://youtu.be/Jjm47KMF-V0)
 
 हमारे [Discord](https://discord.gg/ludenio) से जुड़ें और बताएं कि आप इन प्रोटोटाइप्स से क्या बनाएंगे। या हमारे [YouTube channel](https://www.youtube.com/@ludenio) पर नज़र डालें — वहां बहुत बढ़िया चीज़ें हैं, जिनमें [SuperWEIRD dev diaries](https://www.youtube.com/@ludenio/videos) भी शामिल हैं।
 

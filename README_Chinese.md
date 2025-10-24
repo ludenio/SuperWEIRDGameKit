@@ -8,7 +8,7 @@
 
 在这个仓库中，你会找到六种不同的视觉风格（[video](https://youtu.be/RJwOEDY3MP4)），以及商店/生产模拟器的玩法逻辑。玩家需要完成客户订单并扩展产线。你可以试玩 [demo on itch.io](https://ludenio.itch.io/superweird-game-kit?utm_source=superweirdgamekit&utm_medium=github)。
 
-[![Project Video](youtube_intro_cover.png)](https://youtu.be/PM8bngSynXQ)
+[![Project Video](youtube_intro_cover.png)](https://youtu.be/Jjm47KMF-V0)
 
 加入我们的 [Discord](https://discord.gg/ludenio)，告诉我们你会用这些原型做些什么。或者关注我们的 [YouTube channel](https://www.youtube.com/@ludenio) —— 里面有很多精彩内容，包括 [SuperWEIRD dev diaries](https://www.youtube.com/@ludenio/videos)。
 

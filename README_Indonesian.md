@@ -8,7 +8,7 @@ Di awal pengembangan kami menjalankan banyak eksperimen dengan gaya visual dan g
 
 Di repositori ini Anda akan menemukan enam gaya visual yang berbeda ([video](https://youtu.be/RJwOEDY3MP4)) dan logika gameplay dari simulator toko/produksi. Pemain memenuhi pesanan pelanggan dan memperluas produksi. Anda dapat memainkan [demo on itch.io](https://ludenio.itch.io/superweird-game-kit?utm_source=superweirdgamekit&utm_medium=github).
 
-[![Project Video](youtube_intro_cover.png)](https://youtu.be/PM8bngSynXQ)
+[![Project Video](youtube_intro_cover.png)](https://youtu.be/Jjm47KMF-V0)
 
 Gabung ke [Discord](https://discord.gg/ludenio) untuk memberi tahu kami apa yang akan Anda bangun dengan prototipe ini. Atau kunjungi [YouTube channel](https://www.youtube.com/@ludenio) — ada banyak hal bagus, termasuk [SuperWEIRD dev diaries](https://www.youtube.com/@ludenio/videos).
 
