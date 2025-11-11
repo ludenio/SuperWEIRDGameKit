@@ -20,7 +20,7 @@ package = com.defold.example.basic3d
 title = SuperWEIRDGameKit
 publisher = luden.io
 developer = luden.io
-dependencies#0 = https://github.com/defold/extension-spine/archive/refs/tags/3.9.7.zip
+dependencies#0 = https://github.com/defold/extension-spine/archive/refs/tags/4.1.4.zip
 dependencies#1 = https://github.com/britzl/defold-metrics/archive/master.zip
 dependencies#2 = https://github.com/Insality/druid/archive/refs/tags/0.11.0.zip
 
