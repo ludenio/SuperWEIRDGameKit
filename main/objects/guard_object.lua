@@ -87,13 +87,13 @@ function M.new_view(object)
 	go.set_position(object.position + PROJECTILE_POS_FLOOR, view_data.info[uid].radius)
 	go.set_rotation(vmath.quat_rotation_x(-math.pi / 2), view_data.info[uid].radius)
 	
-	sprite.set_constant(msg.url("main", view_object, "hint"), "tint", vmath.vector4(1, 1, 1, 0.3))
-	sprite.set_constant(msg.url("main", view_object, "hint1"), "tint", vmath.vector4(1, 1, 1, 0.3))
-	sprite.set_constant(msg.url("main", view_object, "hint2"), "tint", vmath.vector4(1, 1, 1, 0.3))
-	sprite.set_constant(msg.url("main", view_object, "hint3"), "tint", vmath.vector4(1, 1, 1, 0.3))
-	sprite.set_constant(msg.url("main", view_object, "hint4"), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "hint"), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "hint1"), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "hint2"), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "hint3"), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "hint4"), "tint", vmath.vector4(1, 1, 1, 0.3))
 
-	sprite.set_constant(msg.url("main", view_object, "shine"), "tint", vmath.vector4(1, 1, 1, 0))
+	go.set(msg.url("main", view_object, "shine"), "tint", vmath.vector4(1, 1, 1, 0))
 	-- go.animate(msg.url("main", view_object, "shine"), "tint.w", go.PLAYBACK_LOOP_PINGPONG, 0.8, go.EASING_INSINE, 2)
 
 	local id = view_progress_bar.init_progress_bar(vmath.vector3(0, 300, 20), view_object)
@@ -146,7 +146,7 @@ function M.update_interpolate(uid, model1, model2, progress)
 		load = load + 1
 	end
 	
-	sprite.set_constant(msg.url("main", view_data.instances[uid], "shine"), "tint", vmath.vector4(1, 1, 1, load / 5))
+	go.set(msg.url("main", view_data.instances[uid], "shine"), "tint", vmath.vector4(1, 1, 1, load / 5))
 	if load == 5 then
 		if not view_data.info[uid].fx2 then
 			view_data.info[uid].fx2 = msg.url("main", view_data.instances[uid], "sparks_highlight")

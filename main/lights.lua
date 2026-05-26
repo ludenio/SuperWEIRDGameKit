@@ -62,7 +62,7 @@ function M.update_rotations()
 	for id, data in pairs(light_recievers) do
 		local url = data.material_component
 		local quat = go.get_rotation(id)
-		local rot_mtx = vmath.matrix4_from_quat(quat)
+		local rot_mtx = vmath.matrix4_quat(quat)
 		go.set(url, "iRotation", rot_mtx)
 	end
 end

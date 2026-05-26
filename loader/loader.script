@@ -1,4 +1,9 @@
 --===================================================================
+-- tem fix while druid uses sys.get_config - function removed in 1.13.0
+--===================================================================
+sys.get_config = sys.get_config_string
+
+--===================================================================
 -- precalculated hashes and local vars
 --===================================================================
 local h_proxy_loaded 		= hash("proxy_loaded")

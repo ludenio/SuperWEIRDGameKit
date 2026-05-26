@@ -70,9 +70,9 @@ end
 --=====================================================================
 function M.new_view(object)
 	local view_object, light_object = item_slot_object.new_view(object)
-	sprite.set_constant(msg.url("main", view_object, "left_hint"	), "tint", vmath.vector4(1, 1, 1, 0.3))
-	sprite.set_constant(msg.url("main", view_object, "right_hint"	), "tint", vmath.vector4(1, 1, 1, 0.3))
-	sprite.set_constant(msg.url("main", view_object, "result_hint"	), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "left_hint"	), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "right_hint"	), "tint", vmath.vector4(1, 1, 1, 0.3))
+	go.set(msg.url("main", view_object, "result_hint"	), "tint", vmath.vector4(1, 1, 1, 0.3))
 	msg.post(msg.url("main", view_object, "left_hint"	), "disable")
 	msg.post(msg.url("main", view_object, "right_hint"	), "disable")
 	msg.post(msg.url("main", view_object, "result_hint"	), "disable")

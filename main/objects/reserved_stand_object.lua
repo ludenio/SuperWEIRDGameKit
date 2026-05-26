@@ -14,7 +14,7 @@ local M = {}
 function M.new_view(object)
 	local view_object, light_object = item_slot_object.new_view(object)
 	sprite.play_flipbook(msg.url("main", view_object, "element_sprite"), object.element_sprite)
-	sprite.set_constant(msg.url("main", view_object, "element_sprite"), "tint", vmath.vector4(1, 1, 1, 1))
+	go.set(msg.url("main", view_object, "element_sprite"), "tint", vmath.vector4(1, 1, 1, 1))
 
 	if visual_settings.enable_animation then
 		go.set_scale(vmath.vector3(0.5,0.5,1), view_object)
