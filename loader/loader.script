@@ -1,55 +1,54 @@
---===================================================================
--- tem fix while druid uses sys.get_config - function removed in 1.13.0
---===================================================================
-sys.get_config = sys.get_config_string
+local h_proxy_loaded = hash("proxy_loaded")
+local h_proxy_unloaded = hash("proxy_unloaded")
+local h_load_world = hash("load_world")
+local h_unload_world = hash("unload_world")
 
---===================================================================
--- precalculated hashes and local vars
---===================================================================
-local h_proxy_loaded 		= hash("proxy_loaded")
-local h_load_world 			= hash("load_world")
-local h_unload_world		= hash("unload_world")
-local loaded_world_index 	= 0 -- index of a currently loaded world
-
-
---===================================================================
---user defined local functions
---===================================================================
-
-local function load_proxy(name)
-	if not name then return end
-	msg.post(name, "load")
-end 
-
-local function unload_proxy(name)
-	if not name then return end
-	msg.post(name, "unload")
+local function reset_world_modules()
+	-- Shared Lua state outlives collection proxies. Drop the unloaded world's
+	-- cached object handles, snapshots, animation state and parsed asset tables.
+	-- The menu owns visual_settings, so keep that shared selection intact.
+	for name in pairs(package.loaded) do
+		if (name:sub(1, 5) == "main." and name ~= "main.visual_settings") or name == "assets.table_data" then
+			package.loaded[name] = nil
+		end
+	end
 end
 
-
---===================================================================
--- engine routines
---===================================================================
+local function switch_proxy(self, next_proxy, next_world_index)
+	self.switching = true
+	self.next_proxy = next_proxy
+	self.next_world_index = next_world_index
+	msg.post(self.current_proxy, "unload")
+end
 
 function init(self)
 	msg.post(".", "acquire_input_focus")
-	load_proxy("#menu")
+	self.current_proxy = "#menu"
+	self.world_index = 0
+	self.switching = true
+	msg.post(self.current_proxy, "load")
 end
 
 function on_message(self, message_id, message, sender)
 	if message_id == h_proxy_loaded then
 		msg.post(sender, "init")
 		msg.post(sender, "enable")
-
-	elseif message_id == h_load_world then
-		unload_proxy("#menu")
-		load_proxy("#world_"..message.world_index)
-		loaded_world_index = message.world_index
-		msg.post("/root#gui", hash("enable_button"))
-		
-	elseif message_id == h_unload_world then
-		unload_proxy("#world_".. loaded_world_index)
-		load_proxy("#menu")
-		loaded_world_index = 0
+		self.switching = false
+		if self.world_index ~= 0 then
+			msg.post("/root#gui", hash("enable_button"))
+		end
+	elseif message_id == h_proxy_unloaded then
+		if self.world_index ~= 0 then
+			reset_world_modules()
+		end
+		self.current_proxy = self.next_proxy
+		self.world_index = self.next_world_index
+		self.next_proxy = nil
+		self.next_world_index = nil
+		msg.post(self.current_proxy, "load")
+	elseif message_id == h_load_world and not self.switching and self.world_index == 0 then
+		switch_proxy(self, "#world_" .. message.world_index, message.world_index)
+	elseif message_id == h_unload_world and not self.switching and self.world_index ~= 0 then
+		switch_proxy(self, "#menu", 0)
 	end
 end

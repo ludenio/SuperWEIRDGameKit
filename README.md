@@ -30,10 +30,13 @@ SuperWEIRD is being created with support from [Carina Initiatives](https://www.c
 
 # Quick Start
 
-1. Install Defold Editor: https://defold.com
+1. Install **Defold 1.13.1** from https://defold.com (the version verified for this project).
 2. Clone or download the repository.
-3. Open the project folder in Defold Editor.
-4. Build and run the project.
+3. Open `game.project` in Defold Editor.
+4. Select **Project → Fetch Libraries**, then **Project → Build** (Cmd+B on macOS).
+5. Choose a world. Move with WASD or the arrow keys, approach a construction pad to build, and use **Menu** to return to world selection.
+
+The dependencies are pinned for reproducible builds: Spine 4.7.8, Druid 1.3.0, Event 16, and Metrics commit `a8b31bf7a680e65e0f5a9d4a2b654d849b5ffd3c`. Spine 4.7.8 supports Defold 1.13.1; upgrading Spine further may require a newer engine.
 
 Note: Editing Spine animations requires the Spine Editor.
 
