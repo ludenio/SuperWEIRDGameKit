@@ -2,7 +2,6 @@ local keys = require "utils.keys"
 local hashes = require "utils.hashes"
 local settings = require "main.settings"
 local druid = require("druid.druid")
-local input = require("druid.extended.input")
 --local ads = require "utils.ads_sdk"
 local data = require "main.data"
 
@@ -80,7 +79,6 @@ local is_game_over = false
 
 
 function init(self)
-	druid.register("input", input)
 	self.druid = druid.new(self)
 
 --	druid_room_id_input = self.druid:new_input("lobby_code_bg", "lobby_code")

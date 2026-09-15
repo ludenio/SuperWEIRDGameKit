@@ -78,22 +78,25 @@ local function _init_parce(add_action_callback, location)
 
     local go_name = data.locations[location.id].go_name
 
+    local setup_url = msg.url("main", "/" .. go_name, "setup")
+    local map_x, map_y, map_width, map_height = tilemap.get_bounds(setup_url)
+    location.map_size = {x = map_x, y = map_y, w = map_width - 1, h = map_height - 1}
+
     for layer, processer in pairs(setup_map_layers) do
-        local x_border,y_border,w_border,h_border = tilemap.get_bounds(msg.url("main", "/".. go_name, "setup"), layer)
-        w_border, h_border = w_border -1, h_border -1
-        if layer == "static_collisions" then
-            collision_manager.init_collision(x_border,y_border,w_border,h_border, location)
+        local tilemap_url = setup_url
+        if layer == "buildings" and location.id == 1 then
+            tilemap_url = msg.url("main", "/" .. go_name, "building_setup")
         end
-        location.map_size = {x = x_border, y = y_border, w = w_border, h = h_border}
+        -- The building map can have different bounds from the collision map.
+        local x_border, y_border, width, height = tilemap.get_bounds(tilemap_url)
+        local w_border, h_border = width - 1, height - 1
+        if layer == "static_collisions" then
+            collision_manager.init_collision(map_x, map_y, map_width - 1, map_height - 1, location)
+        end
 
         for x = x_border, x_border + w_border, 1 do
             for y = y_border, y_border + h_border, 1 do
-                local tile_id 
-                if layer == "buildings" and location.id == 1 then
-                    tile_id = tilemap.get_tile(msg.url("main", "/"..go_name, "building_setup"), layer, x, y)
-                else
-                    tile_id = tilemap.get_tile(msg.url("main", "/".. go_name, "setup"), layer, x, y)
-                end
+                local tile_id = tilemap.get_tile(tilemap_url, layer, x, y)
                 -- print("x: ", x, "y: ", y, "tile_id: ", tile_id)
                 if layer == "ground" then
                     processer(tile_id, x, y, add_action_callback, location)

@@ -9,7 +9,7 @@ textures {
 }
 nodes {
   position {
-    x: -712.0
+    x: 48.0
     y: 615.0
   }
   size {
@@ -19,6 +19,8 @@ nodes {
   type: TYPE_BOX
   texture: "kenney_ui/button_rectangle_flat"
   id: "back_button"
+  xanchor: XANCHOR_LEFT
+  yanchor: YANCHOR_TOP
   inherit_alpha: true
   slice9 {
     x: 8.0

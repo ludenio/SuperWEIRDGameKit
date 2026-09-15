@@ -1,5 +1,4 @@
 local druid = require("druid.druid")
-local input = require("druid.extended.input")
 local visual_settings = require "main.visual_settings"
 
 
@@ -52,7 +51,6 @@ end
 
 
 function init(self)
-	druid.register("input", input)
 	self.druid = druid.new(self)
 	self.button = self.druid:new_button("button_1", button_1_callback)
 	self.button = self.druid:new_button("button_2", button_2_callback)
